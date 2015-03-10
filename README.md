@@ -1,2 +1,0 @@
-# GettingAndCleaningData
-Coursera Project Repo

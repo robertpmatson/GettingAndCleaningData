@@ -11,79 +11,104 @@ The project page that described the project and the data is located at http://ar
 <br/>
 The original data for the project is in the zip file which can be downloaded from:<br/>
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip <br/><br/>
-There original data comes from smartphone accelerometer and gyroscope 3-axial raw signals, which were processed using various signal processing techniques to create a measurement vector consisting of 561 features. From these features, we have extracted the values that were labelled in the "features.txt" file with the words "mean" or "std" in the label. These are the mean and standard deviation values of the mesurements.<br/>
+The original data comes from smartphone accelerometer and gyroscope 3-axial raw signals, which were processed using various signal processing techniques to create a measurement vector consisting of 561 features. From these features, we have extracted the values that were labelled in the "features.txt" file with the words "mean" or "std" in the label. These are the mean and standard deviation values of the mesurements.<br/>
 I did not take the values that started with "f", these were not measurements but values calculated by functions applied on the measurements. Because the project required mean of the mean and standard deviation measurement, the function derived values were not included.
 </p>
-
-Subject : The ID of the subject (person) from whom the data was collected. THere were 30 subjects, numbered 1 to 30.
+<p>
+The values are all grouped by the Subject and Activity fields.
+</p>
+<p>
+Subject : The ID of the subject (person) from whom the data was collected. There were 30 subjects, numbered from 1 through to 30.
 <br/>
-Activity_Label : This is the descriptive text of the activity. There are six values, including "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", and "LAYING"<br/>
+Activity_Label : This is the descriptive text of the activity. There are six activity values: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", and "LAYING"<br/>
 <br/>
-Body_Acceleration_Mean_X: The calculated mean, grouped by (Activity,Subject), of the mean of the body velocity acceleration in the X direction (tBodyAcc-mean()-X).
+Mean.of.tBodyAcc.mean.X: The calculated mean of the mean of the body velocity acceleration in the X direction (tBodyAcc-mean()-X).
 <br/>
-Body_Acceleration_Mean_Y: The calculated mean, grouped by (Activity,Subject), of the mean of the body velocity acceleration in the Y direction (tBodyAcc-mean()-Y).
+Mean.of.tBodyAcc.mean.Y: The calculated mean of the mean of the body velocity acceleration in the Y direction (tBodyAcc-mean()-Y).
 <br/>
-Body_Acceleration_Mean_Z: The calculated mean, grouped by (Activity,Subject), of the mean of the body velocity acceleration  in the Z direction (tBodyAcc-mean()-Z).
-<br/><br/>
-Body_Acceleration_StdDev_X: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body velocity acceleration in the X direction (tBodyAcc-std()-X).
-<br/>
-Body_Acceleration_StdDev_Y: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body velocity acceleration in the Y direction (tBodyAcc-std()-Y).
-<br/>
-Body_Acceleration_StdDev_Z: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body velocity acceleration in the Z direction (tBodyAcc-std()-Z).
+Mean.of.tBodyAcc.mean.Z: The calculated mean of the mean of the body velocity acceleration  in the Z direction (tBodyAcc-mean()-Z).
 <br/>
 <br/>
-Gravity_Acceleration_Mean_X: The calculated mean, grouped by (Activity,Subject), of the mean of the gravity velocity in the X direction (tGravityAcc-mean()-X).
+Mean.of.tBodyAcc.std.X: The calculated mean of the standard deviation of the body velocity acceleration in the X direction (tBodyAcc-std()-X).
 <br/>
-Gravity_Acceleration_Mean_Y: The calculated mean, grouped by (Activity,Subject), of the mean of the gravity velocity in the Y direction (tGravityAcc-mean()-Y).
+Mean.of.tBodyAcc.std.Y: The calculated mean of the standard deviation of the body velocity acceleration in the Y direction (tBodyAcc-std()-Y).
 <br/>
-Gravity_Acceleration_Mean_Z: The calculated mean, grouped by (Activity,Subject), of the mean of the gravity velocity in the Z direction (tGravityAcc-mean()-Z).
-<br/>
-<br/>
-Gravity_Acceleration_StdDev_X: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the gravity velocity in the X direction (tGravityAcc-std()-X).
-<br/>
-Gravity_Acceleration_StdDev_Y: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the gravity velocity in the Y direction (tGravityAcc-std()-Y).
-<br/>
-Gravity_Acceleration_StdDev_Z: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the gravity velocity in the Z direction (tGravityAcc-std()-Z).
+Mean.of.tBodyAcc.std.Z: The calculated mean of the standard deviation of the body velocity acceleration in the Z direction (tBodyAcc-std()-Z).
 <br/>
 <br/>
-Body_Acceleration_Jerk_Mean_X: The calculated mean, grouped by (Activity,Subject), of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-X).
+Mean.of.tGravityAcc.mean.X: The calculated mean of the mean of the gravity velocity in the X direction (tGravityAcc-mean()-X).
 <br/>
-Body_Acceleration_Jerk_Mean_Y: The calculated mean, grouped by (Activity,Subject), of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-Y).
+Mean.of.tGravityAcc.mean.Y: The calculated mean of the mean of the gravity velocity in the Y direction (tGravityAcc-mean()-Y).
 <br/>
-Body_Acceleration_Jerk_Mean_Z: The calculated mean, grouped by (Activity,Subject), of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-Z).
-<br/>
-<br/>
-Body_Acceleration_Jerk_StdDev_X: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-X).
-<br/>
-Body_Acceleration_Jerk_StdDev_Y: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-Y).
-<br/>
-Body_Acceleration_Jerk_StdDev_Z: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-Z).
+Mean.of.tGravityAcc.mean.Z: The calculated mean of the mean of the gravity velocity in the Z direction (tGravityAcc-mean()-Z).
 <br/>
 <br/>
-Body_Gravity_Mean_X: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-X).
+Mean.of.tGravityAcc.std.X: The calculated mean of the standard deviation of the gravity velocity in the X direction (tGravityAcc-std()-X).
 <br/>
-Body_Gravity_Mean_Y: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-Y).
+Mean.of.tGravityAcc.std.Y: The calculated mean of the standard deviation of the gravity velocity in the Y direction (tGravityAcc-std()-Y).
 <br/>
-Body_Gravity_Mean_Z: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-Z).
-<br/>
-<br/>
-Body_Gravity_StdDev_X: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-X).
-<br/>
-Body_Gravity_StdDev_Y: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-Y).
-<br/>
-Body_Gravity_StdDev_Z: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-Z).
+Mean.of.tGravityAcc.std.Z: The calculated mean of the standard deviation of the gravity velocity in the Z direction (tGravityAcc-std()-Z).
 <br/>
 <br/>
-Body_Gravity_Jerk_MeanX: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity jerk reading in the X direction (tBodyAccJerk-mean()-X).
+Mean.of.tBodyAccJerk.mean.X: The calculated mean of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-X).
 <br/>
-Body_Gravity_Jerk_Mean_Y: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity jerk reading in the Y direction (tBodyAccJerk-mean()-Y).
+Mean.of.tBodyAccJerk.mean.Y: The calculated mean of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-Y).
 <br/>
-Body_Gravity_Jerk_Mean_Z: The calculated mean, grouped by (Activity,Subject), of the mean of the body gravity jerk reading in the Z direction (tBodyAccJerk-mean()-Z).
+Mean.of.tBodyAccJerk.mean.Z: The calculated mean of the mean of the body jerk velocity acceleration in the X direction (tBodyAccJerk-mean()-Z).
 <br/>
 <br/>
-Body_Gravity_Jerk_StdDev_X: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity jerk reading in the X direction (tBodyGyroJerk-std()-X).
+Mean.of.tBodyAccJerk.std.X: The calculated mean of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-X).
 <br/>
-Body_Gravity_Jerk_StdDev_Y: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity jerk reading in the Y direction (tBodyGyroJerk-std()-Y).
+Mean.of.tBodyAccJerk.std.Y: The calculated mean of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-Y).
 <br/>
-Body_Gravity_Jerk_StdDev_Z: The calculated mean, grouped by (Activity,Subject), of the standard deviation of the body gravity jerk reading in the Z direction (tBodyGyroJerk-std()-Z).
+Mean.of.tBodyAccJerk.std.Z: The calculated mean of the standard deviation of the body jerk velocity acceleration in the X direction (tBodyAccJerk-std()-Z).
 <br/>
+<br/>
+Mean.of.tBodyGyro.mean.X: The calculated mean of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-X).
+<br/>
+Mean.of.tBodyGyro.mean.Y: The calculated mean of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-Y).
+<br/>
+Mean.of.tBodyGyro.mean.Z: The calculated mean of the mean of the body gravity reading in the X direction (tBodyGyro-mean()-Z).
+<br/>
+<br/>
+Mean.of.tBodyGyro.std.X: The calculated mean of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-X).
+<br/>
+Mean.of.tBodyGyro.std.Y: The calculated mean of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-Y).
+<br/>
+Mean.of.tBodyGyro.std.Z: The calculated mean of the standard deviation of the body gravity reading in the X direction (tBodyGyro-std()-Z).
+<br/>
+<br/>
+Mean.of.tBodyGyroJerk.mean.X: The calculated mean of the mean of the body jerk reading in the X direction (tBodyGyroJerk-mean()-X).
+<br/>
+Mean.of.tBodyGyroJerk.mean.Y: The calculated mean of the mean of the body jerk reading in the Y direction (tBodyGyroJerk-mean()-Y).
+<br/>
+Mean.of.tBodyGyroJerk.mean.Z: The calculated mean of the mean of the body jerk reading in the Z direction (tBodyGyroJerk-mean()-Z).
+<br/>
+<br/>
+Mean.of.tBodyGyroJerk.std.X: The calculated mean of the standard deviation of the body jerk reading in the X direction (tBodyGyroJerk-std()-X).
+<br/>
+Mean.of.tBodyGyroJerk.std.Y: The calculated mean of the standard deviation of the body jerk reading in the Y direction (tBodyGyroJerk-std()-Y).
+<br/>
+Mean.of.tBodyGyroJerk.std.Z: The calculated mean of the standard deviation of the body jerk reading in the Z direction (tBodyGyroJerk-std()-Z).
+<br/>
+<br/>
+Mean.of.tBodyAccMag.mean: The calculated mean of the mean of the magnitude of the body acceleration measurement. ( tBodyAccMag-mean() )
+<br/>
+Mean.of.tBodyAccMag.std: The calculated mean  of the standard deviation of the magnitude of the body acceleration measurement. ( tBodyAccMag-std() )
+<br/>
+Mean.of.tGravityAccMag.mean: The calculated mean of the mean of the magnitude of the gravity acceleration measurement. ( tGravityAccMag-mean() )
+<br/>
+Mean.of.tGravityAccMag.std: The calculated mean of the standard deviation of the magnitude of the gravity acceleration measurement. ( tGravityAccMag-std() )
+<br/>
+Mean.of.tBodyAccJerkMag.mean: The calculated mean of the mean of the magnitude of the body jerk acceleration measurement. ( tGravityAccMag-mean() )
+<br/>
+Mean.of.tBodyAccJerkMag.std: The calculated mean of the of the magnitude of the body jerk acceleration measurement. ( tBodyAccJerkMag-std() )
+<br/>
+Mean.of.tBodyGyroMag.mean: The calculated mean of the mean of the magnitude of the body gravity measurement. ( tBodyGyroMag-mean() )
+<br/>
+Mean.of.tBodyGyroMag.std: The calculated mean of the standard deviation of the magnitude of the body gravity measurement. ( tBodyGyroMag-std() )
+<br/>
+Mean.of.tBodyGyroJerkMag.mean: The calculated mean of the mean of the magnitude of the body gravity jerk measurement. ( tBodyGyroJerkMag-mean() )
+<br/>
+Mean.of.tBodyGyroJerkMag.std: The calculated mean of the standard deviation of the body gravity jerk measurement. ( tBodyGyroJerkMag-std() )
+</p>

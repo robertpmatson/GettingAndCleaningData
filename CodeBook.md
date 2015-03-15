@@ -1,10 +1,6 @@
 <h2>Code Book</h2>
 
-<p>The data dictionary for the file "mytidaydata.txt" is as follows</p>
-
-<p>The columns of the file "mytidaydata.txt" are described as follows.
-The columns are listed in order and for readability purposes are separated into groups of 3.
-The column name from "features.txt" is at the end of each description.</p>
+<p>Code book for the clean and tidy data file: "mytidaydata.txt".</p>
 
 <p>
 The project page that described the project and the data is located at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -13,6 +9,11 @@ The original data for the project is in the zip file which can be downloaded fro
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip <br/><br/>
 The original data comes from smartphone accelerometer and gyroscope 3-axial raw signals, which were processed using various signal processing techniques to create a measurement vector consisting of 561 features. From these features, we have extracted the values that were labelled in the "features.txt" file with the words "mean" or "std" in the label. These are the mean and standard deviation values of the mesurements.<br/>
 I did not take the values that started with "f", these were not measurements but values calculated by functions applied on the measurements. Because the project required mean of the mean and standard deviation measurement, the function derived values were not included.
+</p>
+<p>
+The columns of the file "mytidaydata.txt" are described as follows.
+The columns are listed in order and for readability purposes are separated into groups of 3.
+The column name from the file "features.txt" is at the end of each description.
 </p>
 <p>
 The values are all grouped by the Subject and Activity fields.

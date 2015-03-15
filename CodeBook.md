@@ -12,8 +12,7 @@ I did not take the values that started with "f", these were not measurements but
 </p>
 <p>
 The columns of the file "mytidaydata.txt" are described as follows.
-The columns are listed in order and for readability purposes are separated into groups of 3.
-The column name from the file "features.txt" is at the end of each description.
+The column name from the file "features.txt" , which is contained in the zip file with the data, is at the end of each description.
 </p>
 <p>
 The values are all grouped by the Subject and Activity fields.
@@ -97,17 +96,21 @@ Mean.of.tBodyAccMag.mean: The calculated mean of the mean of the magnitude of th
 <br/>
 Mean.of.tBodyAccMag.std: The calculated mean  of the standard deviation of the magnitude of the body acceleration measurement. ( tBodyAccMag-std() )
 <br/>
+<br/>
 Mean.of.tGravityAccMag.mean: The calculated mean of the mean of the magnitude of the gravity acceleration measurement. ( tGravityAccMag-mean() )
 <br/>
 Mean.of.tGravityAccMag.std: The calculated mean of the standard deviation of the magnitude of the gravity acceleration measurement. ( tGravityAccMag-std() )
+<br/>
 <br/>
 Mean.of.tBodyAccJerkMag.mean: The calculated mean of the mean of the magnitude of the body jerk acceleration measurement. ( tGravityAccMag-mean() )
 <br/>
 Mean.of.tBodyAccJerkMag.std: The calculated mean of the of the magnitude of the body jerk acceleration measurement. ( tBodyAccJerkMag-std() )
 <br/>
+<br/>
 Mean.of.tBodyGyroMag.mean: The calculated mean of the mean of the magnitude of the body gravity measurement. ( tBodyGyroMag-mean() )
 <br/>
 Mean.of.tBodyGyroMag.std: The calculated mean of the standard deviation of the magnitude of the body gravity measurement. ( tBodyGyroMag-std() )
+<br/>
 <br/>
 Mean.of.tBodyGyroJerkMag.mean: The calculated mean of the mean of the magnitude of the body gravity jerk measurement. ( tBodyGyroJerkMag-mean() )
 <br/>

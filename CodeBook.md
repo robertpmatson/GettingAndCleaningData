@@ -7,8 +7,16 @@ The project page that described the project and the data is located at http://ar
 <br/>
 The original data for the project is in the zip file which can be downloaded from:<br/>
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip <br/><br/>
-The original data comes from smartphone accelerometer and gyroscope 3-axial raw signals, which were processed using various signal processing techniques to create a measurement vector consisting of 561 features. From these features, we have extracted the values that were labelled in the "features.txt" file with the words "mean" or "std" in the label. These are the mean and standard deviation values of the mesurements.<br/>
+The original data comes from smartphone accelerometer and gyroscope 3-axial raw signals, which were processed using various signal processing techniques to create a measurement vector consisting of 561 features. From these features, we have extracted the values that were labelled in the "features.txt" file with the words "mean" or "std" in the label. These are the mean and standard deviation values of the measurements.<br/>
 I did not take the values that started with "f", these were not measurements but values calculated by functions applied on the measurements. Because the project required mean of the mean and standard deviation measurement, the function derived values were not included.
+</p>
+<p>
+The data set in "mytidydata.txt" is a tidy data set. 
+<ul>
+<li>Each column represents a specific single value. Each row represents a specific subject and activity.</li>
+<li>The original data has 30 subjects and 6 activities. The grouped data contains 180 rows, each row representing the mean values for the measurements 
+of each subject and activity.</li>
+</ul>
 </p>
 <p>
 The columns of the file "mytidaydata.txt" are described as follows.

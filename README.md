@@ -14,11 +14,16 @@ The files can be downloaded and the script can be run without any need to change
 <p>The script does the following:</p>
 
 <ul>
-<li>Loads the test and training data sets and merges them.</li>
-<li>The columns to use in the calculations (average) are extected from the file "features.txt". Any column that has "mean" or "std" at the end of the name (prior to X,Y or Z9 is used. Other columns were not required according to the specification of the assignment.</li>
-<li>Groups the data by activity and subject, calculates the mean of the values of the columns from the original data that are the mean and standard deviation values.
-The data is then ordered by activity and subject, i.e group by activity for each subject(person).</li>
-<li>Any column in the source data that had "mean()" or "std()" in the name was used. (see features.txt in the "UCI HAR Dataset" folder.</li>
-<li>After grouping the descriptive names are applied.</li>
-<li>The data is output to a file with the name mytidydata.txt , which is included in the repository and also added to the assignment marking page as a link.</li>
+<li>The first step is to load the activity and features, which is done when the file is loaded with source("runAnalysis.R"). This makes the data frames available to 
+all functions in the script. The columns to use in the calculations (average) are extracted from the file "features.txt". The activity data is loaded from the activity_label file.</li>
+<li>The prepareData function calls readDataSet function, loading the test and training data sets and merges them. Which data to load (test or training) is determined by a function argument.</li>
+<li>In the readDataSet function, any column that has "mean" or "std" at the end of the name is selected. THe column indexes are obtained by running a grep function on the features data frame.
+This provides the id values of the columns which are taken from the data, other columns are not taken. ONly columns from the std and mean of the measurements are used, more detailed are in the Cookbook.md file.</li>
+<li>The last step in readDataSet is to merge the data from the subject, activity and data files nto one data frame.
+<li>readDataSet returns each data set to the prepareData function, which row binds each data set to form one large data set of training and test data.</li>
+<li>prepareData then merges the data frames containing the merged test and training data with the activity label data. The activity numeric column is then dropped.</li>
+<li>prepareData returns the data frame to the runAnalysis function which then calls the groupData function.
+<li>This first creates a data table for ease of manipulation. Then a grouping function is applied to the data table to group the data by Subject and Activity. Then the summarise fuction is applied to the grouped table, using the mean function as the function argument. This causes the mean function to be applied to the values in each of the columns not grouped in the group table, which means that the mean function is applied to all the columns except for Subject and Activity, and the values are grouped by the group by columns of SUbject and Activity. After grouping the descriptive names are applied.</li>
+<li>The groupData function then returns the runAnalysis function</li>
+<li>The runAnalysis function the outputs to a file with the name "mytidydata.txt" , which is included in the repository and also added to the assignment marking page as a link.</li>
 </ul>

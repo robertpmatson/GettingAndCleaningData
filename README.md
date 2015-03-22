@@ -14,7 +14,8 @@ The files can be downloaded and the script can be run without any need to change
 <p>The script does the following:</p>
 
 <ul>
-<li>The first step is to load the activity and features, which is done when the file is loaded with source("runAnalysis.R"). This makes the data frames available to 
+<li>The first step is to unzip the zip file.
+<li>Next the script will load the activity and features, which is done when the file is loaded with source("runAnalysis.R"). This makes the data frames available to 
 all functions in the script. The columns to use in the calculations (average) are extracted from the file "features.txt". The activity data is loaded from the activity_label file.</li>
 <li>The prepareData function calls readDataSet function, loading the test and training data sets and merges them. Which data to load (test or training) is determined by a function argument.</li>
 <li>In the readDataSet function, any column that has "mean" or "std" at the end of the name is selected. THe column indexes are obtained by running a grep function on the features data frame.

@@ -63,7 +63,7 @@ prepareData <- function(){
 # THis function takes the prepared data and performs the grouping of the data
 groupData <- function(data){
     
-  # Convert to a table
+  # Wrap the data frame with a table
   data <- tbl_df(data)
   
   #Create a group-by table

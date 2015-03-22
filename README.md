@@ -21,11 +21,11 @@ all functions in the script. The columns to use in the calculations (average) ar
 <li>In the readDataSet function, any column that has "mean" or "std" as a part the name and is not a function value (starting with 'f') is selected. The column indexes are obtained by running a grep function on the features data frame.
 This provides the id values of the columns which are taken from the data, other columns are not taken. Only columns from the std and mean of the measurements are used, more detailed are in the Cookbook.md file.</li>
 <li>The last step in readDataSet is to merge the data from the subject, activity and data files into one data frame.
-<li>readDataSet returns each data set to the prepareData function, which row binds each data set to form one large data set of training and test data.</li>
+<li>readDataSet returns each data frame to the prepareData function, which row binds each data frame to form one large data frame of training and test data.</li>
 <li>prepareData then merges the data frames containing the merged test and training data with the activity label data. The activity numeric column is then dropped.</li>
 <li>prepareData returns the data frame to the runAnalysis function which then calls the groupData function.
 <li>The groupData function first creates a data table for ease of manipulation. Then a grouping function is applied to the data table to group the data by Subject and Activity. 
-<li>Then the summarise fuction is applied to the grouped table, using the mean function as the function argument. This causes the mean function to be applied to the values in each of the columns not grouped in the group table, which means that the mean function is applied to all the columns except for Subject and Activity, and the values are grouped by the group by the grouping columns of the grouped data, which are the Subject and Activity.</li>
+<li>The next step in the groupData function is to apply the summarise function is applied to the grouped table, using the mean function as the function argument. This causes the mean function to be applied to the values in each of the columns not grouped in the group table. This results in the mean function being applied to all the columns except for Subject and Activity, and the calculated values are grouped by the group by columns of the grouping columns of the grouped data, which are the Subject and Activity columns.</li>
 <li>After the summarise function, descriptive names are applied to the data table. The groupData function then returns the runAnalysis function</li>
 <li>The runAnalysis function the outputs to a file with the name "mytidydata.txt" , which is included in the repository and also added to the assignment marking page as a link.</li>
 </ul>

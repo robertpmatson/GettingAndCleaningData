@@ -27,5 +27,5 @@ This provides the id values of the columns which are taken from the data, other 
 <li>The groupData function first creates a data table for ease of manipulation. Then a grouping function is applied to the data table to group the data by Subject and Activity. 
 <li>The next step in the groupData function is to apply the summarise function is applied to the grouped table, using the mean function as the function argument. This causes the mean function to be applied to the values in each of the columns not grouped in the group table. This results in the mean function being applied to all the columns except for Subject and Activity, and the calculated values are grouped by the group by columns of the grouping columns of the grouped data, which are the Subject and Activity columns.</li>
 <li>After the summarise function, descriptive names are applied to the data table. The groupData function then returns the runAnalysis function</li>
-<li>The runAnalysis function the outputs to a file with the name "mytidydata.txt" , which is included in the repository and also added to the assignment marking page as a link.</li>
+<li>The runAnalysis function then outputs the data to a file with the name "mytidydata.txt" , which is included in the repository and also added to the assignment marking page as a link.</li>
 </ul>
